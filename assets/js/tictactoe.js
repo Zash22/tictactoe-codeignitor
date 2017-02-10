@@ -216,5 +216,23 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                     }
                 });
                 return gamestopstatus;                
+            },
+            player1Info: function () {
+                var p1 = prompt("Please enter your name", "Player 1");
+                if (p1 != null) {
+                    //  console.log(p1);
+                    return p1;
+                } else {
+                    console.log("No Player 1");
+                }
+            },
+            player2Info: function () {
+                var p2 = prompt("Please enter your name", "Player 2");
+                if (p2 != null) {
+                    //  console.log(p2);
+                    return p2;
+                } else {
+                    console.log("No Player 2");
+                }
             }
         }
