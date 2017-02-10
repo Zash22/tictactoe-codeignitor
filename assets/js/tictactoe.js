@@ -115,7 +115,7 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                 } else {
                     playername=(player=="X")?player1:(vagainst=="computer")?"Computer":player2;
                     $("#turn").text(playername + " wins this round!!");
-                    var gameresult="("+player+") "+playername;
+                    var gameresult=playername;
                     gamearea.saveGame(gameresult);
                 }
                 $("#turn").fadeIn("slow");
