@@ -9,6 +9,8 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                    ["","8-4-0|8-5-2|8-7-6"]]
         var counter=0;
         var vagainst="friend";
+        var player1 = "";
+        var player2 = "";
         $(document).ready(function() {
             
             $("."+vagainst).css("background","#ddd");
