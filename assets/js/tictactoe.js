@@ -56,7 +56,7 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                 gamearea.clearBoard();
             });
             $(".friend").click(function() {
-                if ( vagainst == "friend" ) { 
+                if ( vagainst == "friend" && counter !==0 ) {
                     return;
                 }
                 $(this).css("background","#ddd");
