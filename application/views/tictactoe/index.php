@@ -23,7 +23,7 @@
                     </div>
                     <div class="row turn">
                         <div class="col-md-12 col-xs-12 footer">
-                            <div id="turn" class="text-info">(X) Turn</div>
+                            <div id="turn" class="text-info"></div>
                             <div class="friend_computer">
                                 <div class="computer">
                                     <i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
