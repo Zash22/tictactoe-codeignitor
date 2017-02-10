@@ -113,8 +113,8 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                     $("#turn").text("TIE!");
                     gamearea.saveGame("TIE");
                 } else {
-                    playername=(player=="X")?"Player 1":(vagainst=="computer")?"Computer":"Player 2";
-                    $("#turn").text("("+ player +") WINNER! - "+playername);
+                    playername=(player=="X")?player1:(vagainst=="computer")?"Computer":player2;
+                    $("#turn").text(playername + " wins this round!!");
                     var gameresult="("+player+") "+playername;
                     gamearea.saveGame(gameresult);
                 }
