@@ -134,7 +134,8 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                     method: 'POST',
                     url: base_url+'index.php/scores/create', 
                     data: {
-                        against: vagainst,
+                        player1: player1,
+                        player2: player2,
                         winner: gameresult
                     },
                     success: function(data) {
