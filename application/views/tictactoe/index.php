@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row mainpanel">
-        <div class="col-md-9 leftpanel">
+        <div class="col-md-6 leftpanel">
 
                 <div class="gameboard">
                     <div class="row turn hidden-xs">
@@ -37,7 +37,7 @@
                 </div>
 
         </div>
-        <div class="col-md-3 hidden-xs rightpanel color-swatch gray-lighter">
+        <div class="col-md-6 hidden-xs rightpanel color-swatch gray-lighter">
             
             <div class="panel panel-default">
                 <div class="panel-heading text-center"><strong>Last 5 matches scores</strong></div>
