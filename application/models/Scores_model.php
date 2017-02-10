@@ -27,7 +27,9 @@ class Scores_model extends CI_Model {
             $this->load->helper('url');
 
             $data = array(
-                'against' => $this->input->post('against'),                
+
+                'player1' => $this->input->post('player1'),
+                'player2' => $this->input->post('player2'),
                 'winner' => $this->input->post('winner')
             );
             log_message('info', 'new game scores added in db > data: '.print_r($data, true));
