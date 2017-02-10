@@ -59,6 +59,10 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                 if ( vagainst == "friend" && counter !==0 ) {
                     return;
                 }
+
+                player1 = gamearea.player1Info();
+                player2 = gamearea.player2Info();
+
                 $(this).css("background","#ddd");
                 $(".computer").css("background","#ccc");
                 vagainst="friend";
