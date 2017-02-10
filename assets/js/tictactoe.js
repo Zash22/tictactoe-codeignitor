@@ -178,9 +178,8 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                 $("#"+selectedid).addClass("text-info");
             },
             chgTurn: function(player){
-                var playervalue = (player==1)?"0":"X";
-                /*player=(player==1)?"2":"1";*/
-                $("#turn").text("("+ playervalue +") Turn");
+                var playervalue = (player == 1) ? player2 : player1;
+                $("#turn").text(playervalue + "'s turn");
             },
             clearBoard: function(){                
               for ( i = 0 ; i < 9 ; i ++ ) {                  
@@ -191,7 +190,7 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
             counter=0;
             console.log("clearBoard: "+gstruct);
             console.log("counter: "+counter);
-                $("#turn").text("(X) Turn");
+                $("#turn").text(player1 + "'s turn");
                 $("#turn").css("font-size","14px");
                 /*$("#turn").css("color","black");*/
                 $("#turn").addClass("text-info");
