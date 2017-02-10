@@ -14,6 +14,12 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
         $(document).ready(function() {
             
             $("."+vagainst).css("background","#ddd");
+
+            if (counter == 0) {
+                player1 = gamearea.player1Info();
+                player2 = gamearea.player2Info();
+                $("#turn").text(player1 + "'s turn");
+            }
             
             $(".box").click(function() {
                 var selectedid = $(this).attr("id");
