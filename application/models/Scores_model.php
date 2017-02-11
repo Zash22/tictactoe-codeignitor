@@ -8,18 +8,11 @@ class Scores_model extends CI_Model {
     
         public function get_scores($limit)
         {
-                if ($slug === FALSE)
-                {
-                        $limit=5;
                         $start_row=0;
 
                         $this->db->order_by("id", "DESC");
                         $query = $this->db->get('scores', $limit, $start_row);
                         return $query->result_array();
-                }
-
-                $query = $this->db->get_where('scores', array('slug' => $slug));
-                return $query->row_array();
         }
     
         public function set_scores()
