@@ -6,7 +6,7 @@ class Scores_model extends CI_Model {
                 $this->load->database();
         }
     
-        public function get_scores($slug = FALSE)
+        public function get_scores($limit)
         {
                 if ($slug === FALSE)
                 {
