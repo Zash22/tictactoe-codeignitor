@@ -8,6 +8,7 @@ class Scores_model extends CI_Model {
     
         public function get_scores($limit)
         {
+                        $limit;
                         $start_row=0;
 
                         $this->db->order_by("id", "DESC");
