@@ -71,9 +71,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
-        <a href="<?php echo base_url(); ?>index.php/tictactoe/index/0">Click here to open TicTacToe Level 0 </a> <br>
-        <a href="<?php echo base_url(); ?>index.php/tictactoe/index/1">Click here to open TicTacToe Level 1 </a> <br>
-        <a href="<?php echo base_url(); ?>index.php/tictactoe/index/2">Click here to open TicTacToe Level 2 </a> <br>
+        <a href="<?php echo base_url(); ?>index.php/tictactoe/index">Click here to play Tic Tac Toe</a> <br>
+        <a href="<?php echo base_url(); ?>index.php/tictactoe/view">Click here to view all game results </a> <br>
 	</div>
 </div>
 
