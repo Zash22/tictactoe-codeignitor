@@ -17,6 +17,9 @@
         var base_url = '<?php echo base_url();?>';        
     </script>
 
+    <?php if ( $title == 'TicTacToe' ) { ?>
         <script src="<?php echo base_url(); ?>assets/js/tictactoe.js"></script>
+    <?php }  ?>
+
 </head>
     <body>
