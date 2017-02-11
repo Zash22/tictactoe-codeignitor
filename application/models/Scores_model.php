@@ -15,7 +15,7 @@ class Scores_model extends CI_Model {
                         $query = $this->db->get('scores', $limit, $start_row);
                         return $query->result_array();
         }
-    
+
         public function set_scores()
         {
             $this->load->helper('url');

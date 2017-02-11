@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     
     <?php echo link_tag('assets/css/tictactoe.css'); ?>
+
     <script type="text/javascript">
-        var base_url = '<?php echo base_url();?>';        
+        var base_url = '<?php echo base_url();?>';
     </script>
 
     <?php if ( $title == 'TicTacToe' ) { ?>
