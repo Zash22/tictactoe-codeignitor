@@ -16,14 +16,7 @@
     <script type="text/javascript">
         var base_url = '<?php echo base_url();?>';        
     </script>
-    <?php if ( $level == 0 ) { ?>
+
         <script src="<?php echo base_url(); ?>assets/js/tictactoe.js"></script>
-    <?php } else if ( $level == 1 ) { ?>
-        <script src="<?php echo base_url(); ?>assets/js/tictactoe_1.js"></script>
-    <?php } else if ( $level == 2 ) { ?>
-        <script src="<?php echo base_url(); ?>assets/js/tictactoe_2.js"></script>
-    <?php } ?>
-    
-                
 </head>
     <body>
