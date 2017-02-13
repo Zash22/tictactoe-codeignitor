@@ -12,9 +12,11 @@ class Tictactoe extends CI_Controller {
 
         public function index()
         {
-            $limit = 5;
+                $limit = 5;
             
                 $data['scores'] = $this->scores_model->get_scores($limit);
+                $data['scores'] = $this->formatDate($data['scores']);
+
                 $data['title'] = 'TicTacToe';
                 $this->load->view('templates/header', $data);
                 $this->load->view('tictactoe/index', $data);
