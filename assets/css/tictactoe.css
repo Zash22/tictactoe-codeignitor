@@ -12,20 +12,24 @@ html, body, .container-fluid {
 .gameboard {
     height: 100%;
     margin: auto;
+    border: 1px solid black;
+
 }
 .gameboard .row{
     height:29%;
+
 }
 .gameboard .turn{
     height:13%;
 }
 .leftpanel {
-    height:100%;            
-    background-color:#ccc;
+    height:100%;
+
+    /*background-color:#ccc;*/
 }
 .rightpanel {
     height:100%;
-    background-color:#ddd;
+    /*background-color:#ddd;*/
 }
 .rpanelheader {
     text-align: center;
@@ -33,6 +37,8 @@ html, body, .container-fluid {
 }
 .scoresheading div{
     font-weight: bold;
+    background-color: #1f2228;
+    color: #ffffff;
 }
 .box {
     border:1px solid #000;
@@ -63,6 +69,26 @@ html, body, .container-fluid {
 i {             
     vertical-align: middle;
 }
+
+/*.scores .row {*/
+    /*background-color: #00CC00;*/
+/*}*/
+
+#scores .row:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+#scores .row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@font-face {
+    font-family: "effra";
+    src: url("https://use.typekit.net/af/d761fd/00000000000000000001787b/27/l?subset_id=2&fvd=n4&token=SszeBEZeiQdJlHtnYEd7zFTnJ%2BU55MjhL%2FI3pvDH6AfqGHhEL7UTNAFU8D3HK%2Fk4K6f2BBNMgwUb5kQ0gRslQz0hCMoDkTQrtvQs%2FWy6xXaBYLH15Kczj%2BKxcP7WIo74I8H9HTYTZghWRZ8KXvKWIvfeLyBjBCJRaTsztv%2FHeuHt%2BE742xxAgXYNKV%2BXfudqydMk1m7Z0ojHMekraLA9H9%2FDcJAsX3xejec9BJ%2FJOHZmp%2FPgBv8f8oS5dPEHS6SKb0OVjg%2BqeITL31RBf0vm9dIWe8DsGUQL4ol9HNgdTkPbBA8Mxbh2QtphSTVJRxSMiqpugZSYsQhI29gcKwuPU%2Fp5CInPWPTeRV%2FsxuZoOj8%3D");
+}
+
+
+
 @media (min-width: 768px)            
 {
      div[class^="gameboard"]{width: 70%;height:70%;}
