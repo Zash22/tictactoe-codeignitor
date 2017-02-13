@@ -91,15 +91,55 @@ i {
 
 @media (min-width: 350px)
 {
-     div[class^="gameboard"]{width: 70%;height:70%;}
+     div[class^="gameboard"]{width: 70%; height: 70%}
 
         .gameboard .row{
             height:25%;
         }
         .gameboard .turn{
-            height:12.5%;
+            /*height:20.5%;*/
         }
         .box {
-            padding-top: 20px;
+            /*padding-top: 20px;*/
         }
+
+    .panel-actions {
+        margin-top: -20px;
+        margin-bottom: 0;
+        text-align: right;
+    }
+    .panel-actions a {
+        color:#333;
+    }
+    .panel-fullscreen {
+        display: inline-block;
+        z-index: 9999;
+        /*position: fixed;*/
+        width: 100% !important;
+        height: 90% !important;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        /*overflow: auto;*/
+    }
+}
+
+/*bootstrap overides*/
+.panel-default {
+    border: none !important;
+}
+.panel-heading {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+
+}
+
+.panel-body {
+    padding: 0 !important;
+}
+
+.panel-body .row {
+    padding: 4px 0px !important;
 }
