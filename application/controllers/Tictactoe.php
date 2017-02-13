@@ -23,13 +23,7 @@ class Tictactoe extends CI_Controller {
 
         public function view()
         {
-            $limit = 0;
 
-            $data['scores'] = $this->scores_model->get_scores($limit);
-            $data['title'] = 'Scores';
-            $this->load->view('templates/header', $data);
-            $this->load->view('tictactoe/scores', $data);
-            $this->load->view('templates/footer', $data);
         }
     
         public function create()
