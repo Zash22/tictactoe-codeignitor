@@ -12,24 +12,41 @@ html, body, .container-fluid {
 .gameboard {
     height: 100%;
     margin: auto;
-    border: 1px solid black;
 
 }
 .gameboard .row{
     height:29%;
+}
 
+.gameboard .row .col-*{
+    padding: 0 !important;
+}
+
+
+.gameboard #odd .col-xs-4:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+/*.gameboard #odd .col-xs-4:nth-child(even) {*/
+    /*background-color: black;*/
+/*}*/
+
+/*.gameboard #even .col-xs-4:nth-child(odd) {*/
+    /*background-color: black;*/
+/*}*/
+
+.gameboard #even .col-xs-4:nth-child(even) {
+    background-color: #e8e8e8;
 }
 .gameboard .turn{
     height:13%;
+    margin: 0 -30px;
 }
 .leftpanel {
     height:100%;
-
-    /*background-color:#ccc;*/
 }
 .rightpanel {
     height:100%;
-    /*background-color:#ddd;*/
 }
 .rpanelheader {
     text-align: center;
@@ -49,7 +66,8 @@ html, body, .container-fluid {
 }
 .turn {
     text-align:center;
-    padding-top:5px;            
+    /*padding-top:5px;*/
+    /*color: #2c8edd;*/
 }        
 .tleft, .tright, .bright, .bleft { border:0; }
 .middle { border: 1; }
@@ -63,16 +81,18 @@ html, body, .container-fluid {
 .friend_computer div {
     text-align:center;width:50%;float:left;
 }
-.friend, .computer { height:100%;padding-top:5px; }
+.friend, .computer {
+    padding:2% 0; }
 .footer { height:100%; }
-.footer .text-info { height:50%;}
+.footer .text-info {
+color: #2c8edd;
+    vertical-align: middle;
+
+    padding: 1% 0;
+}
 i {             
     vertical-align: middle;
 }
-
-/*.scores .row {*/
-    /*background-color: #00CC00;*/
-/*}*/
 
 #scores .row:nth-child(odd) {
     background-color: #e8e8e8;
@@ -97,13 +117,12 @@ i {
             height:25%;
         }
         .gameboard .turn{
-            /*height:20.5%;*/
         }
         .box {
-            /*padding-top: 20px;*/
         }
 
     .panel-actions {
+
         margin-top: -20px;
         margin-bottom: 0;
         text-align: right;
@@ -114,14 +133,12 @@ i {
     .panel-fullscreen {
         display: inline-block;
         z-index: 9999;
-        /*position: fixed;*/
         width: 100% !important;
         height: 90% !important;
         top: 0;
         right: 0;
         left: 0;
         bottom: 0;
-        /*overflow: auto;*/
     }
 }
 
@@ -143,3 +160,20 @@ i {
 .panel-body .row {
     padding: 4px 0px !important;
 }
+
+.bg-info {
+    background-color: transparent !important;
+}
+
+/*font-awesome overides */
+
+.fa-circle-thin,
+.fa-times
+{
+    color: black;
+}
+
+.text-info .fa-circle-thin, .text-info .fa-times {
+    color: #2c8edd;
+}
+
