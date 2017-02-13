@@ -30,4 +30,17 @@ class Tictactoe extends CI_Controller {
         {
         }
 
+        public function formatDate($scores) {
+
+            foreach ($scores as $key => $score) {
+
+                $date = $scores[$key]['created_at'];
+                $date = explode( " ", $date);
+                $date = $date[0];
+                $scores[$key]['created_at'] = $date;
+            }
+
+            return $scores;
+        }
+
 }
