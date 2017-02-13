@@ -31,9 +31,14 @@ class Scores extends CI_Controller {
         }
     
         public function create()
-        {         
+        {
+                $limit = 5;
                 $this->scores_model->set_scores();
-                $data['scores'] = $this->scores_model->get_scores();
-                $this->load->view('scores/index', $data);                
+
+                $data['scores'] = $this->scores_model->get_scores($limit);
+                $data['scores'] = $this->formatDate($data['scores']);
+
+                $this->load->view('scores/scores', $data);
+        }
         }
 }
