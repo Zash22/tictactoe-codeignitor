@@ -162,10 +162,10 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
                 var strcontent ="";
                 $.each(dataarray, function(index,value) {
                     strcontent += '<div class="row">';
-                    strcontent += '<div class="col-md-2">' + value.player1 + '</div>';
-                    strcontent += '<div class="col-md-2">' + value.player2 + '</div>';
-                    strcontent += '<div class="col-md-2">' + value.winner + '</div>';
-                    strcontent += '<div class="col-md-6">' + value.created_at + '</div>';
+                    strcontent += '<div class="col-md-3">' + value.player1 + '</div>';
+                    strcontent += '<div class="col-md-3">' + value.player2 + '</div>';
+                    strcontent += '<div class="col-md-3">' + value.winner + '</div>';
+                    strcontent += '<div class="col-md-3">' + value.created_at + '</div>';
                     strcontent += '</div>';
                 });
                 $("#scores").html(strcontent);
