@@ -1,6 +1,8 @@
 html, body, .container-fluid {            
     height:100%;
     padding:0px;margin:0px;
+
+    font-family: effra;
 }
 .mainpanel {
     width:100%;
