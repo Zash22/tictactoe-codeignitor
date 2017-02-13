@@ -13,7 +13,10 @@ class Scores_model extends CI_Model {
 
                         $this->db->order_by("id", "DESC");
                         $query = $this->db->get('scores', $limit, $start_row);
-                        return $query->result_array();
+
+                        $scores =  $query->result_array();
+
+                        return $scores;
         }
 
         public function set_scores()
