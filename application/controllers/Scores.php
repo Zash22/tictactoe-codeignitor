@@ -11,9 +11,19 @@ class Scores extends CI_Controller {
         }
 
         public function index()
-        {            
-                $data['scores'] = $this->scores_model->get_scores();
-                $this->load->view('scores/index', $data);
+        {
+
+            $limit = 0;
+
+            $data['scores'] = $this->scores_model->get_scores($limit);
+
+            $data['title'] = 'Scores';
+
+
+            $this->load->view('templates/header', $data);
+
+            $this->load->view('scores/index', $data);
+            $this->load->view('templates/footer', $data);
         }
 
         public function view($slug = NULL)
