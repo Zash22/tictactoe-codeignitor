@@ -1,5 +1,6 @@
 /.idea
 /.gitattributes
+/deploy.php
 /application/cache
 /application/logs
 /application/config/config.php
