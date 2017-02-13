@@ -2,10 +2,24 @@
     <div class="row mainpanel">
         <div class="col-md-6 leftpanel">
 
-                <div class="gameboard">
-                    <div class="row turn hidden-xs">
-                        <div class="col-md-12"></div>
-                    </div>
+            <div class="gameboard">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">Play Tic Tac Toe</h3>
+                    <ul class="list-inline panel-actions hidden-md hidden-lg">
+                        <li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></a></li>
+                    </ul>
+                </div>
+
+<!--                <ul class="list-inline panel-actions">-->
+<!--                    <li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></a></li>-->
+<!--                </ul>-->
+
+<!--                <li><a href="#" id="panel-fullscreen" role="button" title="Toggle fullscreen"><i class="glyphicon glyphicon-resize-full"></i></a></li>-->
+
+<!--                <div class="row turn hidden-xs">-->
+<!--                        <div class="col-md-12"></div>-->
+<!--                    </div>-->
                     <div class="row">
                         <div class="col-md-4 col-xs-4 box tleft" id="0"></div>
                         <div class="col-md-4 col-xs-4 box top" id="1"></div>
@@ -37,25 +51,25 @@
                 </div>
 
         </div>
-        <div class="col-md-6 hidden-xs rightpanel color-swatch gray-lighter">
+        <div class="col-md-6 hidden-xs  hidden-sm rightpanel color-swatch gray-lighter">
             
             <div class="panel panel-default">
                 <div class="panel-heading text-center"><strong>Last 5 matches scores</strong></div>
               <div class="panel-body">            
                     <div class="row scoresheading">
-                        <div class="col-md-2">Player 1</div>
-                        <div class="col-md-2">Player 2</div>
-                        <div class="col-md-2">Winner</div>
-                        <div class="col-md-6">Date</div>
+                        <div class="col-md-3">Player 1</div>
+                        <div class="col-md-3">Player 2</div>
+                        <div class="col-md-3">Winner</div>
+                        <div class="col-md-3">Date</div>
                     </div> 
                     <div id="scores" class="scores text-nowrap">
                     <?php
                         foreach ( $scores as $score ) { ?>
                             <div class="row">
-                                <div class="col-md-2"><?php echo $score['player1']; ?></div>
-                                <div class="col-md-2"><?php echo $score['player2']; ?></div>
-                                <div class="col-md-2"><?php echo $score['winner']; ?></div>
-                                <div class="col-md-6"><?php echo $score['created_at']; ?></div>
+                                <div class="col-md-3"><?php echo $score['player1']; ?></div>
+                                <div class="col-md-3"><?php echo $score['player2']; ?></div>
+                                <div class="col-md-3"><?php echo $score['winner']; ?></div>
+                                <div class="col-md-3"><?php echo $score['created_at']; ?></div>
                             </div> 
                         <?php } ?>
                     </div>
