@@ -6,6 +6,8 @@ class Scores extends CI_Controller {
                 parent::__construct();
                 $this->load->model('scores_model');
                 $this->load->helper('url_helper');
+                $this->load->helper('html');
+
         }
 
         public function index()
