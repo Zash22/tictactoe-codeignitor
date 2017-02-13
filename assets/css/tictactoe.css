@@ -89,7 +89,7 @@ i {
 
 
 
-@media (min-width: 768px)            
+@media (min-width: 350px)
 {
      div[class^="gameboard"]{width: 70%;height:70%;}
 
