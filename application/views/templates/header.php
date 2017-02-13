@@ -14,6 +14,8 @@
     
     <?php echo link_tag('assets/css/tictactoe.css'); ?>
 
+    <link rel="stylesheet" href="<?php echo base_url("vendor/twbs/bootstrap/docs/dist/css/bootstrap.css"); ?>" />
+
     <script type="text/javascript">
         var base_url = '<?php echo base_url();?>';
     </script>
