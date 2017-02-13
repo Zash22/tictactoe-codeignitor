@@ -12,6 +12,26 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
         var player1 = "";
         var player2 = "";
         $(document).ready(function() {
+
+            $("#panel-fullscreen").click(function (e) {
+                e.preventDefault();
+
+                //alert ("clicked!");
+
+                var $this = $(this);
+
+                if ($this.children('i').hasClass('glyphicon-resize-full'))
+                {
+                    $this.children('i').removeClass('glyphicon-resize-full');
+                    $this.children('i').addClass('glyphicon-resize-small');
+                }
+                else if ($this.children('i').hasClass('glyphicon-resize-small'))
+                {
+                    $this.children('i').removeClass('glyphicon-resize-small');
+                    $this.children('i').addClass('glyphicon-resize-full');
+                }
+                $(this).closest('.gameboard').toggleClass('panel-fullscreen');
+            });
             
             $("."+vagainst).css("background","#ddd");
 
