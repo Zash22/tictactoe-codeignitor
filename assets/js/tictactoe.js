@@ -179,6 +179,7 @@ gstruct = [["","0-1-2|0-3-6|0-4-8"],
             },
             renderScores: function(data){                
                 var dataarray = $.parseJSON(data);
+
                 var strcontent ="";
                 $.each(dataarray, function(index,value) {
                     strcontent += '<div class="row">';
