@@ -40,5 +40,17 @@ class Scores extends CI_Controller {
 
                 $this->load->view('scores/scores', $data);
         }
+
+        public function formatDate($scores) {
+
+            foreach ($scores as $key => $score) {
+
+            $date = $scores[$key]['created_at'];
+            $date = explode( " ", $date);
+            $date = $date[0];
+            $scores[$key]['created_at'] = $date;
+            }
+
+        return $scores;
         }
 }
