@@ -57,3 +57,4 @@ $route['default_controller'] = 'welcome';
 $route['scores/create'] = 'scores/create';
 $route['scores'] = 'scores';
 $route['tictactoe'] = 'tictactoe';
+$route['pdf'] = 'pdf';
