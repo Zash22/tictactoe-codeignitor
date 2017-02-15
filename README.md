@@ -33,4 +33,5 @@ OR
 Unzip .zip file to your web root directory.
 Rename application/config/config-sample.php to config.php and add base url.
 Rename application/config/database-sample.php to database.php and add your database details.
+Run #composer install from this site's root directory.
 
