@@ -1,56 +1,59 @@
 <?php
-class Scores extends CI_Controller {
 
-        public function __construct()
-        {
-                parent::__construct();
-                $this->load->model('scores_model');
-                $this->load->helper('url_helper');
-                $this->load->helper('html');
+class Scores extends CI_Controller
+{
 
-        }
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('scores_model');
+        $this->load->helper('url_helper');
+        $this->load->helper('html');
 
-        public function index()
-        {
+    }
 
-            $limit = 0;
+    public function index()
+    {
 
-            $data['scores'] = $this->scores_model->get_scores($limit);
+        $limit = 0;
 
-            $data['title'] = 'Scores';
+        $data['scores'] = $this->scores_model->get_scores($limit);
+
+        $data['title'] = 'Scores';
 
 
-            $this->load->view('templates/header', $data);
+        $this->load->view('templates/header', $data);
 
-            $this->load->view('scores/index', $data);
-            $this->load->view('templates/footer', $data);
-        }
+        $this->load->view('scores/index', $data);
+        $this->load->view('templates/footer', $data);
+    }
 
-        public function view($slug = NULL)
-        {
-        }
-    
-        public function create()
-        {
-                $limit = 5;
-                $this->scores_model->set_scores();
+    public function view($slug = NULL)
+    {
+    }
 
-                $data['scores'] = $this->scores_model->get_scores($limit);
-                $data['scores'] = $this->formatDate($data['scores']);
+    public function create()
+    {
+        $limit = 5;
+        $this->scores_model->set_scores();
 
-                $this->load->view('scores/scores', $data);
-        }
+        $data['scores'] = $this->scores_model->get_scores($limit);
+        $data['scores'] = $this->formatDate($data['scores']);
 
-        public function formatDate($scores) {
+        $this->load->view('scores/scores', $data);
+    }
 
-            foreach ($scores as $key => $score) {
+    public function formatDate($scores)
+    {
+
+        foreach ($scores as $key => $score) {
 
             $date = $scores[$key]['created_at'];
-            $date = explode( " ", $date);
+            $date = explode(" ", $date);
             $date = $date[0];
             $scores[$key]['created_at'] = $date;
-            }
+        }
 
         return $scores;
-        }
+    }
 }

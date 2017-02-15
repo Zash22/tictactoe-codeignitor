@@ -1,8 +1,6 @@
 <div class="container-fluid">
     <div class="row mainpanel">
-
         <div class="col-md-12 color-swatch gray-lighter">
-
             <div class="panel panel-default">
                 <div class="panel-heading text-center"><strong>Past match results</strong></div>
                 <div class="panel-body">
@@ -25,8 +23,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </div>
 </div>

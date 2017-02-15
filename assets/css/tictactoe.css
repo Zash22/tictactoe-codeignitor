@@ -1,96 +1,119 @@
-html, body, .container-fluid {            
-    height:100%;
-    padding:0px;margin:0px;
-
+html, body, .container-fluid {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
     font-family: effra;
 }
+
 .mainpanel {
-    width:100%;
-    height:100%;
-    padding:0px;margin:0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
+
 .gameboard {
     height: 100%;
     margin: auto;
 
 }
-.gameboard .row{
-    height:29%;
+
+.gameboard .row {
+    height: 29%;
 }
 
-.gameboard .row .col-*{
+.gameboard .row .col- * {
     padding: 0 !important;
 }
-
 
 .gameboard #odd .col-xs-4:nth-child(odd) {
     background-color: #e8e8e8;
 }
 
-/*.gameboard #odd .col-xs-4:nth-child(even) {*/
-    /*background-color: black;*/
-/*}*/
-
-/*.gameboard #even .col-xs-4:nth-child(odd) {*/
-    /*background-color: black;*/
-/*}*/
-
 .gameboard #even .col-xs-4:nth-child(even) {
     background-color: #e8e8e8;
 }
-.gameboard .turn{
-    height:13%;
+
+.gameboard .turn {
+    height: 13%;
     margin: 0 -30px;
 }
+
 .leftpanel {
-    height:100%;
+    height: 100%;
 }
+
 .rightpanel {
-    height:100%;
+    height: 100%;
 }
+
 .rpanelheader {
     text-align: center;
     font-weight: bold;
 }
-.scoresheading div{
+
+.scoresheading div {
     font-weight: bold;
     background-color: #1f2228;
     color: #ffffff;
 }
+
 .box {
-    border:1px solid #000;
-    height:100%;
-    text-align: center; 
-    width:33.33%;            
-    font-size:60px;
+    border: 1px solid #000;
+    height: 100%;
+    text-align: center;
+    width: 33.33%;
+    font-size: 60px;
 }
+
 .turn {
-    text-align:center;
-    /*padding-top:5px;*/
-    /*color: #2c8edd;*/
-}        
-.tleft, .tright, .bright, .bleft { border:0; }
-.middle { border: 1; }
-.mleft, .mright  { border-left:0;border-right: 0; }         
-.bottom, .top { border-bottom: 0; border-top: 0;}        
+    text-align: center;
+}
+
+.tleft, .tright, .bright, .bleft {
+    border: 0;
+}
+
+.middle {
+    border: 1;
+}
+
+.mleft, .mright {
+    border-left: 0;
+    border-right: 0;
+}
+
+.bottom, .top {
+    border-bottom: 0;
+    border-top: 0;
+}
 
 .friend_computer {
     height: 50%;
-    width:100%;
+    width: 100%;
 }
-.friend_computer div {
-    text-align:center;width:50%;float:left;
-}
-.friend, .computer {
-    padding:2% 0; }
-.footer { height:100%; }
-.footer .text-info {
-color: #2c8edd;
-    vertical-align: middle;
 
+.friend_computer div {
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+.friend, .computer {
+    padding: 2% 0;
+}
+
+.footer {
+    height: 100%;
+}
+
+.footer .text-info {
+    color: #2c8edd;
+    vertical-align: middle;
     padding: 1% 0;
 }
-i {             
+
+i {
     vertical-align: middle;
 }
 
@@ -107,19 +130,15 @@ i {
     src: url("https://use.typekit.net/af/d761fd/00000000000000000001787b/27/l?subset_id=2&fvd=n4&token=SszeBEZeiQdJlHtnYEd7zFTnJ%2BU55MjhL%2FI3pvDH6AfqGHhEL7UTNAFU8D3HK%2Fk4K6f2BBNMgwUb5kQ0gRslQz0hCMoDkTQrtvQs%2FWy6xXaBYLH15Kczj%2BKxcP7WIo74I8H9HTYTZghWRZ8KXvKWIvfeLyBjBCJRaTsztv%2FHeuHt%2BE742xxAgXYNKV%2BXfudqydMk1m7Z0ojHMekraLA9H9%2FDcJAsX3xejec9BJ%2FJOHZmp%2FPgBv8f8oS5dPEHS6SKb0OVjg%2BqeITL31RBf0vm9dIWe8DsGUQL4ol9HNgdTkPbBA8Mxbh2QtphSTVJRxSMiqpugZSYsQhI29gcKwuPU%2Fp5CInPWPTeRV%2FsxuZoOj8%3D");
 }
 
+@media (min-width: 350px) {
+    div[class^="gameboard"] {
+        width: 70%;
+        height: 70%
+    }
 
-
-@media (min-width: 350px)
-{
-     div[class^="gameboard"]{width: 70%; height: 70%}
-
-        .gameboard .row{
-            height:25%;
-        }
-        .gameboard .turn{
-        }
-        .box {
-        }
+    .gameboard .row {
+        height: 25%;
+    }
 
     .panel-actions {
 
@@ -127,9 +146,11 @@ i {
         margin-bottom: 0;
         text-align: right;
     }
+
     .panel-actions a {
-        color:#333;
+        color: #333;
     }
+
     .panel-fullscreen {
         display: inline-block;
         z-index: 9999;
@@ -146,6 +167,7 @@ i {
 .panel-default {
     border: none !important;
 }
+
 .panel-heading {
     background-color: transparent !important;
     border: none !important;
@@ -168,8 +190,7 @@ i {
 /*font-awesome overides */
 
 .fa-circle-thin,
-.fa-times
-{
+.fa-times {
     color: black;
 }
 
