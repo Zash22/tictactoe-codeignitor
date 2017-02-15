@@ -72,7 +72,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div id="body">
         <a href="<?php echo base_url(); ?>index.php/tictactoe">Click here to play Tic Tac Toe</a> <br>
-        <a href="<?php echo base_url(); ?>index.php/scores">Click here to view all game results </a> <br>
+        <a href="<?php echo base_url(); ?>index.php/scores">Click here to view all game results</a> <br>
+        <a href="<?php echo base_url(); ?>index.php/pdf">Click here to download Pdf report of all games</a> <br>
 	</div>
 </div>
 
