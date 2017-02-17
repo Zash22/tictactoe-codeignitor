@@ -80,7 +80,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div id="body">
         <a href="<?php echo base_url(); ?>index.php/tictactoe">Click here to play Tic Tac Toe</a> <br>
         <a href="<?php echo base_url(); ?>index.php/scores">Click here to view all game results</a> <br> <br>
-</div>
 
+        <form role="form" method="post" action="<?php echo site_url('index.php/pdf'); ?>">
+            <label for="start">Start Date</label>
+            <?php $attributes = 'id="st" placeholder="Start Date"';
+            echo form_input('st', set_value('st'), $attributes); ?>
+            <label for="end">End Date</label>
+            <?php $attributes = 'id="ed" placeholder="End Date"';
+            echo form_input('ed', set_value('ed'), $attributes); ?> <br> <br>
+            <?php echo form_submit('submit', 'Click here to download Pdf report of all games within date range'); ?>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#st").datepicker();
+        $("#ed").datepicker();
+    });
+</script>
 </body>
 </html>
