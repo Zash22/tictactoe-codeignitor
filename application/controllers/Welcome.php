@@ -23,6 +23,7 @@ class Welcome extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url_helper');
+        $this->load->helper('form_helper');
     }
 
     public function index()
